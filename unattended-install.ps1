@@ -77,7 +77,11 @@ $packages = @(
     'vscode', 
     'winmerge', 
     'wireguard', 
-    'tortoisegit'
+    'tortoisegit',
+
+    'nodejs',
+    'nvm',
+    'pnpm'
     
     # Optional packages
     # 'rawtherapee', 
@@ -101,3 +105,7 @@ foreach ($package in $packages) {
 }
 
 Write-Host "All packages have been installed."
+
+# Allow scripts to be run in Powershell (e.g. npm)
+echo A | Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+npm -v

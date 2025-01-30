@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Turn off/disable "Ask Copilot" in the Taskbar search interface
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001

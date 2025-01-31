@@ -37,6 +37,7 @@ $packages = @(
     'WinDirStat', 
     'winhotkey', 
     'wireshark',
+    'openhardwaremonitor',
     
     # DevOps packages
     'winscp', 
@@ -109,3 +110,6 @@ Write-Host "All packages have been installed."
 # Allow scripts to be run in Powershell (e.g. npm)
 echo A | Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 npm -v
+
+# Show serial number:
+GWMI -Class Win32_Bios | select SerialNumber

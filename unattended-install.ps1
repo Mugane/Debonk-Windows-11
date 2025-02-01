@@ -38,6 +38,7 @@ $packages = @(
     'winhotkey', 
     'wireshark',
     'openhardwaremonitor',
+    'etcher',
     
     # DevOps packages
     'winscp', 

@@ -1,0 +1,34 @@
+{
+  "version": "2",
+  "registry": [
+    Windows Registry Editor Version 5.00
+    # Add the option to manage system cooling back to the Procesor Power Management section under Advanced Power Settings 
+    # (Control Panel > Hardware and Sound > Power Options > Edit Plan Settings > Change advanced power settings) 
+    
+    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\94D3A615-A899-4AC5-AE2B-E4D8F634367F]
+    "Attributes"=dword:00000002
+
+
+
+    Windows Registry Editor Version 5.00
+    
+    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+    "Scancode Map"=hex:00,00,00,00,00,00,00,00,02,00,00,00,00,00,3a,00,00,00,00,00
+
+
+    Windows Registry Editor Version 5.00
+    
+    [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+    "RotatingLockScreenOverlayEnabled"=dword:00000000
+    "SubscribedContent-338387Enabled"=dword:00000000
+
+
+    Windows Registry Editor Version 5.00
+    
+    ; Turn off/disable "Ask Copilot" in the Taskbar search interface
+    
+    [HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsCopilot]
+    "TurnOffWindowsCopilot"=dword:00000001
+
+
+

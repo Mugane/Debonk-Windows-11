@@ -18,6 +18,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Collate Templates & Package for Deployment
         run: |
+          chmod +x collate.sh
           ./collate.sh
           mkdir -p latest
           mv fixes.reg latest/

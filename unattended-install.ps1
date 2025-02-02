@@ -38,7 +38,7 @@ $packages = @(
     'winhotkey', 
     'wireshark',
     'openhardwaremonitor',
-    'etcher',
+    'rufus',
     
     # DevOps packages
     'winscp', 
@@ -52,7 +52,7 @@ $packages = @(
     'GoogleChrome',
     
     # Media packages
-    'cdburnerxp', 
+    # 'cdburnerxp', 
     'flicflac', 
     'jellyfin', 
     'soulseek', 
